@@ -33,9 +33,9 @@ filename = 'nlp_model.pkl'  # Deploy this file in Heroku platform
 pickle.dump(clf, open(filename, 'wb'))
 
 # Alternative usage of Saved Model
-# joblib.dump(clf, 'NB_spam_model.pkl')
-# NB_spam_model = open('NB_spam_model.pkl', 'rb')
-# clf = joblib.load(NB_spam_model)
+joblib.dump(clf, 'NB_spam_model.pkl')
+NB_spam_model = open('NB_spam_model.pkl', 'rb')
+clf = joblib.load(NB_spam_model)
 
 # y_pred = clf.predict(X_test)  # My test - First line
 #
