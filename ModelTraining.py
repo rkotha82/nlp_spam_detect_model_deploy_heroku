@@ -2,7 +2,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.externals import joblib
+# from sklearn.externals import joblib
+import joblib
 import pickle
 
 df = pd.read_csv('spam.csv', encoding = 'latin-1')  # Read the dataset
